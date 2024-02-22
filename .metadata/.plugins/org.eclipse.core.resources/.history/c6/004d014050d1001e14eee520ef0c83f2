@@ -1,0 +1,21 @@
+package com.example.service;
+
+import java.util.List;
+
+import com.example.entity.Student;
+import com.example.responce.entity.StudentResponce;
+
+public interface StudentService {
+	
+	public StudentResponce saveStudent(StudentResponce studentResponce);
+	
+	public List<StudentResponce> getAllStudent();
+
+	public StudentResponce getStudentById(int id);
+	
+	public Student updateStudent(StudentResponce studentResponce);
+	
+	public void deleteStudentById(int id);
+	
+	
+}

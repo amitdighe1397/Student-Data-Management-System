@@ -1,0 +1,18 @@
+package com.example.service;
+
+import com.example.entity.Student;
+import com.example.responce.entity.StudentResponce;
+
+public interface StudentService {
+	
+	public Student saveStudent(StudentResponce studentResponce);
+	
+	public void getAllStudent();
+
+	public Student getStudentById(int id);
+	
+	public Student updateStudent(StudentResponce studentResponce);
+	
+	public void deleteStudentById(int id);
+	
+}

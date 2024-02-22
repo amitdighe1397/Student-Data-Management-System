@@ -1,0 +1,29 @@
+package com.example.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.responce.entity.StudentResponce;
+import com.example.service.StudentService;
+
+@RestController
+@RequestMapping("/Student-api")
+public class StudentController {
+
+	@Autowired
+	private StudentService studentService;
+
+	public StudentResponce saveStudent(StudentResponce studentResponce);
+
+	public List<StudentResponce> getAllStudent();
+
+	public StudentResponce getStudentById(int id);
+
+	public StudentResponce updateStudent(StudentResponce studentResponce, int id);
+
+	public void deleteStudentById(int id);
+
+}
